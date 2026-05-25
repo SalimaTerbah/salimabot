@@ -1,4 +1,4 @@
-\# 🌟 SalimaBot
+\#  SalimaBot
 
 \### Asistente IA bilingüe árabe-español para aprendizaje de idiomas
 
@@ -12,13 +12,13 @@
 
 
 
-\## 🚀 Demo en vivo
+\##  Demo en vivo
 
 👉 \[huggingface.co/spaces/SalimaTerbah/salimabot](https://huggingface.co/spaces/SalimaTerbah/salimabot)
 
 
 
-\## 📖 Descripción
+\##  Descripción
 
 SalimaBot es un asistente de aprendizaje de español 
 
@@ -26,21 +26,21 @@ diseñado específicamente para arabohablantes.
 
 
 
-\## ✨ Funcionalidades
+\##  Funcionalidades
 
-\- 💬 Chat bilingüe árabe-español
+\-  Chat bilingüe árabe-español
 
-\- 🏆 Ejercicios interactivos con puntuación
+\-  Ejercicios interactivos con puntuación
 
-\- 🧠 Memoria de conversaciones
+\-  Memoria de conversaciones
 
-\- 📶 Modo offline con Ollama
+\-  Modo offline con Ollama
 
-\- ⚡ Respuestas en 1-2 segundos con Groq API
+\-  Respuestas en 1-2 segundos con Groq API
 
 
 
-\## 🛠️ Stack tecnológico
+\##  Stack tecnológico
 
 \- \*\*IA:\*\* LLaMA 3.3 70B via Groq API
 
@@ -54,7 +54,7 @@ diseñado específicamente para arabohablantes.
 
 
 
-\## 🗂️ Estructura
+\##  Estructura
 
 
 
@@ -70,7 +70,7 @@ proyecto/
 
 
 
-\## 👩‍💻 Autora
+\##  Autora
 
 \*\*Salima Terbah\*\* — Desarrolladora Junior · DAM
 
