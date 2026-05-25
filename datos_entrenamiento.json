@@ -1,0 +1,285 @@
+[
+  {
+    "instruction": "Quiero pedir una cita médica por teléfono",
+    "response": "¡Vamos a practicarlo! Yo soy la recepcionista. Empieza tú llamando. Di: 'Buenos días, llamo para pedir una cita con el médico de cabecera'"
+  },
+  {
+    "instruction": "Buenos días, llamo para pedir una cita",
+    "response": "¡Muy bien! Natural y correcto. La recepcionista respondería: '¿Me puede dar su nombre y número de tarjeta sanitaria?' — Practica respondiendo con datos inventados"
+  },
+  {
+    "instruction": "كيف أقول أن عندي صداع بالإسبانية؟",
+    "response": "تقول: 'Me duele la cabeza' — أي يؤلمني رأسي. وللأعراض الأخرى: 'Me duele el estómago' — معدة, 'Tengo fiebre' — عندي حرارة, 'Me encuentro mal' — أشعر بتعب عام"
+  },
+  {
+    "instruction": "Explica síntomas al médico en español",
+    "response": "Frases clave: 'Llevo tres días con fiebre' — hace tres días que tengo fiebre. 'Me duele aquí' — señalando. 'Tengo náuseas' — ganas de vomitar. 'No puedo dormir por el dolor' — el dolor no me deja dormir. ¿Practicamos una situación real?"
+  },
+  {
+    "instruction": "No entiendo lo que dice el médico, qué hago",
+    "response": "¡Pregunta siempre! Di: 'Perdone, ¿puede repetirlo más despacio?' o '¿Me lo puede escribir?' o '¿Qué significa esa palabra?'. Los médicos están acostumbrados. Nunca salgas sin entender el diagnóstico."
+  },
+  {
+    "instruction": "Quiero comprar medicamento en la farmacia",
+    "response": "Di al farmacéutico: 'Buenos días, me han recetado esto' — mostrando la receta. O sin receta: 'Necesito algo para el dolor de cabeza'. Palabras útiles: 'comprimidos' — pastillas, 'jarabe' — líquido, 'cada ocho horas' — tres veces al día"
+  },
+  {
+    "instruction": "Tengo que ir a urgencias, qué digo",
+    "response": "En urgencias di: 'Necesito atención urgente' o 'Me encuentro muy mal'. Explica: cuándo empezó, qué te duele, si tienes alergias a medicamentos. Frase importante: 'Soy alérgico/a a la penicilina' si es tu caso."
+  },
+  {
+    "instruction": "Quiero practicar una entrevista de trabajo en español",
+    "response": "¡Perfecto! Soy la entrevistadora. Primera pregunta clásica: '¿Puede presentarse brevemente y contarme su experiencia profesional?' — Tómate tu tiempo para responder como en una entrevista real."
+  },
+  {
+    "instruction": "Soy programadora con dos años de experiencia",
+    "response": "¡Buena respuesta! Para sonar más profesional añade detalles: 'Soy programadora con dos años de experiencia en desarrollo de aplicaciones. Domino Java, Python y Odoo. Actualmente busco mi primera oportunidad en una empresa tech.' ¿Continuamos con la siguiente pregunta?"
+  },
+  {
+    "instruction": "كيف أقدم نفسي في مقابلة عمل بالإسبانية؟",
+    "response": "قل: 'Buenos días, soy [اسمك], tengo experiencia en programación y estoy muy interesado en este puesto.' — صباح الخير، أنا [اسمك]، لدي خبرة في البرمجة وأنا مهتم جداً بهذا المنصب. المفتاح: كن واضحاً ومختصراً وابتسم!"
+  },
+  {
+    "instruction": "¿Cómo hablo con mis compañeros de trabajo de forma natural?",
+    "response": "Frases cotidianas: 'Buenos días a todos' — al llegar. '¿Cómo lo tienes?' — preguntando por su trabajo. '¿Quedamos para comer?' — para el almuerzo. '¿Me echas una mano?' — pedir ayuda. 'No problem' lo dicen todos pero mejor di '¡Sin problema!' 😄"
+  },
+  {
+    "instruction": "Tengo una reunión en español y me pongo nervioso",
+    "response": "Normal al principio. Frases que salvan: 'Perdona, ¿puedes repetir?' — si no entiendes. 'Si no me equivoco...' — para dar tu opinión. '¿Podemos volver a ese punto?' — para aclarar algo. 'Estoy de acuerdo' / 'No estoy segura' — para participar. ¿Practicamos una reunión simulada?"
+  },
+  {
+    "instruction": "Ayúdame a escribir un correo profesional en español",
+    "response": "Estructura básica: Saludo: 'Estimado/a [nombre]' o 'Buenos días'. Cuerpo: claro y directo. Cierre: 'Quedo a su disposición para cualquier consulta. Un cordial saludo, [tu nombre]'. ¿Quieres que practiquemos un correo concreto? ¿Para qué situación?"
+  },
+  {
+    "instruction": "Quiero presentarme en mi primer día de trabajo",
+    "response": "Di: 'Hola, soy [nombre], soy nueva en el equipo. Vengo del departamento de desarrollo. Estoy muy contenta de estar aquí.' Consejo: sonríe, da la mano, pregunta nombres. Si no recuerdas un nombre di '¿Cómo me has dicho que te llamabas?' — muy natural en español."
+  },
+  {
+    "instruction": "Corrige: yo querer un café con leche por favor",
+    "response": "¡Casi! La corrección es: 'Quiero un café con leche, por favor'. El error: 'querer' debe conjugarse → 'quiero' (yo quiero). En español el infinitivo nunca va solo con el sujeto. Recuerda: yo QUIERO, tú QUIERES, él QUIERE. ¿Practicamos más conjugaciones?"
+  }
+,
+  {
+    "instruction": "Quiero comprar en una tienda de ropa",
+    "response": "Frases útiles: '¿Tiene esto en mi talla?' — Do you have this in my size. '¿Puedo probármelo?' — Can I try it on. '¿Dónde están los probadores?' — Where are the fitting rooms. '¿Cuánto cuesta?' — How much is it. '¿Tiene algo más barato?' — Do you have something cheaper. ¿Practicamos una situación?"
+  },
+  {
+    "instruction": "كيف أطلب المساعدة في المتجر بالإسبانية؟",
+    "response": "قل: 'Perdona, ¿me puede ayudar?' — عفواً، هل يمكنك مساعدتي؟ أو 'Estoy buscando...' — أبحث عن... مثال: 'Estoy buscando una chaqueta de color azul' — أبحث عن جاكيت أزرق. كلمة مفتاحية: 'Perdona' للاستئذان دائماً."
+  },
+  {
+    "instruction": "Quiero devolver un producto en la tienda",
+    "response": "Di: 'Quiero devolver esto, por favor' — guardando el ticket. Si está defectuoso: 'Tiene un defecto, no funciona bien'. Si cambiaste de opinión: 'Me he arrepentido, ¿puedo cambiarlo?' Importante: guarda siempre el ticket de compra — 'el recibo'."
+  },
+  {
+    "instruction": "En el supermercado no encuentro algo",
+    "response": "Pregunta: '¿Dónde están los lácteos?' — productos de leche. '¿Tiene arroz basmati?' '¿En qué pasillo está la pasta?' — pasillo = aisle. Si no entiendes la respuesta di: 'Perdona, ¿me puede acompañar?' — y te llevan directamente. 😄"
+  },
+  {
+    "instruction": "Quiero pagar en la tienda",
+    "response": "En la caja di: '¿Puedo pagar con tarjeta?' o 'En efectivo, por favor'. Si hay cola: 'Perdona, ¿está libre esta caja?' El cajero dirá: '¿Tiene tarjeta de fidelidad?' — tarjeta de puntos. Puedes decir 'No, gracias' tranquilamente."
+  },
+  {
+    "instruction": "Practicar conversación en el banco",
+    "response": "Frases clave: 'Quiero abrir una cuenta' — abrir cuenta bancaria. 'Quiero hacer una transferencia' — enviar dinero. 'He perdido mi tarjeta' — tarjeta perdida. 'Quiero información sobre préstamos' — pedir dinero prestado. ¿Practicamos alguna situación concreta del banco?"
+  },
+  {
+    "instruction": "Cómo pido comida en un restaurante",
+    "response": "Al sentarte: '¿Nos puede traer la carta?' — el menú. Para pedir: 'Para mí, de primero... y de segundo...' — primer plato y segundo plato. '¿Qué recomienda?' — pedir consejo. '¿Tiene opciones sin gluten/vegetarianas?' Al terminar: 'La cuenta, por favor' — nunca digas 'el bill'."
+  },
+  {
+    "instruction": "كيف أشكو من شيء في المطعم بالإسبانية؟",
+    "response": "قل بأدب: 'Perdona, este plato está frío' — هذا الطبق بارد. 'Creo que hay un error en el pedido' — أعتقد أن هناك خطأ في الطلب. 'He pedido sin cebolla' — طلبت بدون بصل. دائماً ابدأ بـ 'Perdona' وابق هادئاً — الأسبان يقدرون الأدب كثيراً."
+  },
+  {
+    "instruction": "Quiero coger el autobús o metro en España",
+    "response": "Frases útiles: '¿Este autobús va a [destino]?' '¿Dónde está la parada de metro más cercana?' '¿Cuánto cuesta el billete?' — billete = ticket. 'Un billete sencillo' — solo ida. 'Un abono mensual' — para todo el mes. '¿Me avisa cuando lleguemos a [parada]?' — pedirle al conductor que te avise."
+  },
+  {
+    "instruction": "Tengo un problema con mi casero o piso",
+    "response": "Vocabulario clave: 'casero' — dueño del piso. 'alquiler' — lo que pagas cada mes. 'contrato' — el documento firmado. Frases: 'La calefacción no funciona' — heating broken. 'Hay una gotera' — water leak. 'Necesito que venga un técnico' — I need a technician. Siempre comunícate por escrito para tener pruebas."
+  },
+  {
+    "instruction": "Corrige: ayer yo he ido al supermercado",
+    "response": "¡Buena frase pero con un error! Lo correcto es: 'Ayer fui al supermercado'. El error: con 'ayer' usamos pretérito indefinido (fui) NO pretérito perfecto (he ido). Regla fácil: 'ayer, la semana pasada, el año pasado' → siempre indefinido. 'Hoy, este mes, esta semana' → perfecto. ¿Practicamos más?"
+  },
+  {
+    "instruction": "Cómo me quejo de algo sin ser maleducado en español",
+    "response": "Fórmulas educadas: 'Me gustaría comentar algo...' — queja suave. 'No estoy muy contento/a con...' — más directo. 'Entiendo su posición pero...' — para negociar. 'Quisiera hablar con el responsable' — si no se soluciona. En España ser directo no es maleducado — evita dar demasiadas vueltas."
+  },
+  {
+    "instruction": "Palabras que confunden a los arabohablantes en español",
+    "response": "Las más comunes: 'embarazada' — pregnant, NO embarrassed. 'actualmente' — currently, NO actually. 'sensible' — sensitive, NO sensible. 'éxito' — success, NO exit. 'librería' — bookshop, NO library (eso es 'biblioteca'). Estos se llaman 'falsos amigos' — ¿quieres más ejemplos?"
+  },
+  {
+    "instruction": "كيف أعبر عن المشاعر بالإسبانية؟",
+    "response": "المشاعر الأساسية: 'Estoy contento/a' — سعيد/ة. 'Estoy triste' — حزين/ة. 'Estoy nervioso/a' — متوتر/ة. 'Estoy cansado/a' — متعب/ة. 'Me siento solo/a' — أشعر بالوحدة. 'Estoy harto/a' — تعبت وملّيت. نصيحة: استخدم 'estar' دائماً للمشاعر المؤقتة."
+  },
+  {
+    "instruction": "Diferencia entre ser y estar con ejemplos",
+    "response": "Regla básica: SER = características permanentes. ESTAR = estados temporales. Ejemplos: 'Soy morocana' — soy de Marruecos (permanente). 'Estoy en España' — ahora mismo (temporal). 'El café es caliente' — siempre quema. 'El café está caliente' — ahora mismo está caliente. ¿Quieres practicar con situaciones reales tuyas?"
+  }
+,
+  {
+    "instruction": "Cómo me matriculo en el colegio de mis hijos en España",
+    "response": "Necesitas ir al colegio con: DNI o NIE tuyo, libro de familia, certificado de empadronamiento y cartilla de vacunación del niño. Di en secretaría: 'Vengo a matricular a mi hijo/a'. El plazo de matriculación suele ser en junio. Si no hay plaza di: '¿Hay lista de espera?'"
+  },
+  {
+    "instruction": "كيف أتحدث مع معلم ابني في إسبانيا؟",
+    "response": "اطلب موعداً وقل: 'Buenos días, soy el padre/la madre de [اسم الطفل], quisiera hablar con su tutor/a' — صباح الخير، أنا والد/والدة [الاسم]، أريد التحدث مع معلمه/معلمته. كلمات مفيدة: 'tutoría' — لقاء مع المعلم، 'notas' — الدرجات، 'comportamiento' — السلوك، 'deberes' — الواجبات المنزلية."
+  },
+  {
+    "instruction": "Mi hijo tiene problemas en el colegio qué digo",
+    "response": "Pide una tutoría urgente: 'Necesito hablar con el tutor de mi hijo lo antes posible'. Explica: 'Mi hijo está teniendo dificultades con...' o 'Ha habido un problema con...'. Palabras clave: 'acoso' — bullying, 'dificultades de aprendizaje' — learning difficulties, 'apoyo escolar' — extra help. No tengas miedo de preguntar — los colegios están para ayudar."
+  },
+  {
+    "instruction": "Cómo renuevo el NIE o hago trámites en extranjería",
+    "response": "Para extranjería necesitas: cita previa en 'sede.gob.es', formulario EX17 o EX18 según tu caso, pasaporte, foto, tasas pagadas. Di en ventanilla: 'Vengo a renovar mi autorización de residencia'. Lleva siempre copias de todo. Si no entiendes algo di: 'Por favor, ¿puede explicármelo más despacio?'"
+  },
+  {
+    "instruction": "Quiero empadronarme en Santander",
+    "response": "Ve al Ayuntamiento de Santander con: pasaporte o NIE, contrato de alquiler o autorización del propietario. Di: 'Quiero hacer el empadronamiento'. Es gratuito y muy importante — lo necesitas para casi todos los trámites. El volante de empadronamiento lo puedes pedir después online o en persona."
+  },
+  {
+    "instruction": "Cómo pido la prestación por desempleo en español",
+    "response": "Ve al SEPE con: DNI o NIE, número de cuenta bancaria, vida laboral. Di: 'Quiero solicitar la prestación por desempleo'. Tienes 15 días hábiles desde que te quedas sin trabajo. Palabras clave: 'paro' — desempleo coloquialmente, 'prestación' — el dinero que cobras, 'SEPE' — la oficina de empleo."
+  },
+  {
+    "instruction": "Corrige: yo tengo mucho años en España",
+    "response": "¡Casi! La corrección es: 'Llevo muchos años en España'. Dos errores: 1) 'mucho' → 'muchos' porque 'años' es masculino plural. 2) 'tener años en un lugar' no es natural en español — usamos 'llevar tiempo en un lugar'. Practica: 'Llevo 5 años en Santander', 'Llevo 3 meses trabajando aquí'."
+  },
+  {
+    "instruction": "Diferencia entre hace y lleva en español",
+    "response": "'Hace' + tiempo + que + presente: 'Hace 5 años que vivo en España' — describes una situación que continúa. 'Llevo' + tiempo + gerundio: 'Llevo 5 años viviendo en España' — mismo significado, más coloquial. Ambas son correctas. Error típico: 'Hace 5 años vivo' ❌ → siempre necesita 'que': 'Hace 5 años QUE vivo' ✅"
+  },
+  {
+    "instruction": "كيف أشرح للطبيب أن طفلي مريض؟",
+    "response": "قل: 'Mi hijo tiene fiebre desde ayer' — عند ابني حرارة منذ أمس. 'Le duele la barriga' — يؤلمه بطنه. 'Ha vomitado dos veces' — تقيأ مرتين. 'No quiere comer' — لا يريد الأكل. 'Está muy decaído' — يبدو خاملاً ومتعباً. مفيد: اكتب الأعراض بالإسبانية قبل الذهاب للطبيب."
+  },
+  {
+    "instruction": "Cómo hablo con mi jefe para pedir un día libre",
+    "response": "Di: 'Buenos días, ¿podría hablar con usted un momento?' Luego: 'Necesitaría pedir el día [fecha] libre por motivos personales/familiares.' Si es urgente: 'Ha surgido un imprevisto familiar, ¿sería posible ausentarme hoy?' Siempre agradece: 'Muchas gracias por su comprensión.' En España se valora la comunicación directa y educada."
+  },
+  {
+    "instruction": "Frases para cuando no entiendo algo en español",
+    "response": "Las más naturales: '¿Puede repetirlo?' — básica. '¿Puede hablar más despacio?' — si van muy rápido. '¿Cómo dice?' — muy coloquial y educada. '¿Qué significa...?' — para palabras nuevas. 'No he entendido bien, ¿me lo puede explicar?' — más formal. 'Perdona, ¿puedes repetir?' — entre amigos. Nunca te quedes con dudas — preguntar es de personas inteligentes."
+  },
+  {
+    "instruction": "Palabras formales vs informales en español",
+    "response": "Formal (trabajo, trámites): 'usted', 'quisiera', 'le agradecería', 'disculpe'. Informal (amigos, familia): 'tú', 'oye', 'mira', 'tío/tía' en España. Error común: usar 'usted' con amigos suena raro. Usar 'tú' con el jefe puede parecer irrespetuoso. En Santander y el norte de España el 'tú' se usa más que en otras regiones incluso en contextos semiformales."
+  },
+  {
+    "instruction": "Cómo abro una cuenta bancaria en España",
+    "response": "Necesitas: NIE o pasaporte, justificante de domicilio (empadronamiento), número de teléfono español. Bancos recomendados para extranjeros: CaixaBank, BBVA, Santander. Di: 'Quiero abrir una cuenta corriente'. Pregunta por: 'comisiones de mantenimiento' — fees mensuales, 'tarjeta de débito' — tarjeta normal, 'banca online' — gestión por internet."
+  },
+  {
+    "instruction": "Corrige: me gusta mucho la España y su cultura",
+    "response": "¡Muy bien pero hay un pequeño error! Lo correcto es: 'Me gusta mucho España y su cultura'. El error: los países en español NO llevan artículo generalmente. Decimos 'España', 'Marruecos', 'Francia' — sin 'la', 'el'. Excepción: algunos países sí lo llevan: 'la India', 'el Perú' (pero es opcional). España nunca lleva artículo."
+  },
+  {
+    "instruction": "كيف أتعامل مع الجيران في إسبانيا؟",
+    "response": "الإسبان يقدرون التحية اليومية: 'Buenos días' — صباح الخير، 'Buenas tardes' — مساء الخير، 'Hola, ¿qué tal?' — أهلاً كيف حالك. في المصعد أو الممر قل دائماً: 'Hola' وابتسم. إذا كان هناك مشكلة (ضوضاء مثلاً) قل بأدب: 'Perdona, ¿podrías bajar un poco el volumen?' — عذراً، هل يمكنك تخفيض الصوت قليلاً؟"
+  },
+  {
+    "instruction": "Cómo busco piso de alquiler en Santander",
+    "response": "Plataformas: Idealista.com, Fotocasa.es, Habitaclia.com. Cuando llamas di: 'Llamo por el piso de [dirección], ¿sigue disponible?' Preguntas importantes: '¿Está incluida la comunidad?' — gastos del edificio, '¿Y los suministros?' — luz y agua, '¿Cuánto es la fianza?' — depósito, '¿Se permite tener hijos?' — importante preguntarlo."
+  },
+  {
+    "instruction": "Ejercicio: completa con por o para",
+    "response": "¡Vamos a practicar! Completa estas frases: 1) Estudio español ___ trabajar mejor. 2) Este regalo es ___ ti. 3) Pasé ___ tu casa ayer. 4) Lo hice ___ ayudarte. 5) Salgo ___ Madrid mañana. Respuestas: 1)para 2)para 3)por 4)por 5)para. Regla rápida: PARA = destino/objetivo. POR = causa/movimiento/intercambio."
+  },
+  {
+    "instruction": "Cómo felicito a alguien en español",
+    "response": "Cumpleaños: '¡Feliz cumpleaños!' o '¡Felicidades!'. Trabajo nuevo: '¡Enhorabuena!' — muy español, significa congratulations. Bebé: '¡Enhorabuena por el bebé!' Navidad: '¡Feliz Navidad!' o '¡Felices fiestas!'. Año nuevo: '¡Feliz Año Nuevo!'. Algo conseguido: '¡Muy bien!' o '¡Genial!' o '¡Qué bien!'. '¡Enhorabuena!' es la palabra más importante — úsala siempre para logros."
+  },
+  {
+    "instruction": "كيف أعبر عن عدم الموافقة بأدب في إسبانيا؟",
+    "response": "بأدب وبشكل طبيعي: 'No estoy del todo de acuerdo' — لست موافقاً تماماً. 'Entiendo tu punto pero...' — أفهم وجهة نظرك لكن... 'Yo lo veo de otra manera' — أرى الأمر بشكل مختلف. 'No lo tengo tan claro' — لست متأكداً من ذلك. الإسبان مباشرون لكنهم يقدرون الأدب. تجنب: 'No, estás equivocado' — لا، أنت مخطئ (مباشر جداً)."
+  },
+  {
+    "instruction": "Cómo hago una queja formal por escrito en español",
+    "response": "Estructura: 1) 'Me dirijo a usted para...' — presentación. 2) Explica el problema con fechas y detalles. 3) '¿Qué solicitas?' — 'Le solicito que...'. 4) Cierre: 'En espera de su respuesta, le saluda atentamente, [tu nombre]'. Palabras clave: 'reclamación' — queja formal, 'hoja de reclamaciones' — documento oficial que toda empresa debe tener."
+  }
+,
+  {
+    "instruction": "Explica el subjuntivo con ejemplos fáciles",
+    "response": "El subjuntivo expresa deseos, dudas y emociones. Fórmula fácil: 'Espero que + subjuntivo': 'Espero que vengas' — I hope you come. 'Quiero que + subjuntivo': 'Quiero que me ayudes'. 'Es importante que + subjuntivo': 'Es importante que estudies'. Truco: si puedes sustituir por 'ojalá', usa subjuntivo. ¿Practicamos con situaciones tuyas?"
+  },
+  {
+    "instruction": "كيف أستخدم المضارع الشرطي في الإسبانية؟",
+    "response": "الشرطي يعبر عن أشياء افتراضية. مثال: 'Si tuviera dinero, viajaría' — لو كان عندي مال، كنت سأسافر. 'Si pudiera, estudiaría más' — لو استطعت، كنت سأدرس أكثر. القاعدة: Si + ماضي ناقص (imperfecto subjuntivo) + شرطي (condicional). هذا مستوى B2-C1 — تمرن عليه كثيراً!"
+  },
+  {
+    "instruction": "Expresiones coloquiales españolas más usadas",
+    "response": "Las más útiles: 'Venga' — ok/vamos/de acuerdo (¡muy español!). 'Tío/tía' — amigo/amiga entre jóvenes. 'Mola' — gusta/es guay. 'Flipar' — alucinar/sorprenderse. 'Estar hecho polvo' — estar muy cansado. 'No hay manera' — es imposible. 'A ver' — bueno/veamos. 'Hombre' — expresión de sorpresa o énfasis. ¿Quieres practicar usándolas en frases?"
+  },
+  {
+    "instruction": "Qué significa venga en español",
+    "response": "'Venga' es una de las palabras más versátiles del español: 1) De acuerdo: '¿Quedamos a las 7?' — 'Venga'. 2) Vamos: 'Venga, que llegamos tarde'. 3) Sorpresa: '¡Venga ya!' — No me digas/imposible. 4) Despedida informal: 'Venga, hasta luego'. 5) Ánimo: 'Venga, tú puedes'. Si aprendes solo una palabra coloquial — que sea esta. 😄"
+  },
+  {
+    "instruction": "Corrige: me he olvidado mi bolso en casa",
+    "response": "¡Casi perfecto! Dos opciones correctas: 'Me he olvidado el bolso en casa' — sin 'mi', usamos el artículo. O 'He olvidado mi bolso en casa' — sin 'me'. En español con verbos reflexivos de olvido no combinamos 'me + mi'. Regla: 'olvidarse de algo' → 'me he olvidado el/la...' ¿Practicamos más con objetos cotidianos?"
+  },
+  {
+    "instruction": "Expresiones para el trabajo en España",
+    "response": "Muy usadas en oficinas: 'Estar al loro' — estar atento/informado. 'Ponerse al día' — actualizarse. 'Sacar adelante' — completar algo difícil. 'Echar una mano' — ayudar. 'Tener mucho curro' — tener mucho trabajo (curro = trabajo, muy coloquial). 'Apañárselas' — arreglárselas solo. 'No dar abasto' — no poder con todo el trabajo. Úsalas y parecerás nativa. 😊"
+  },
+  {
+    "instruction": "Diferencia entre también y tampoco",
+    "response": "'También' es para frases afirmativas: 'Yo también hablo árabe'. 'Tampoco' es para frases negativas: 'Yo tampoco sé conducir'. Error típico: 'No sé cocinar' — 'Yo también no sé' ❌ → 'Yo tampoco sé' ✅. Truco: también=also, tampoco=neither. Si la frase tiene 'no' — usa tampoco. ¿Practicamos?"
+  },
+  {
+    "instruction": "Cómo uso los tiempos del pasado en español",
+    "response": "Los tres principales: 1) Pretérito perfecto: 'He comido' — acción reciente o de hoy. 2) Pretérito indefinido: 'Comí' — acción terminada en pasado lejano. 3) Pretérito imperfecto: 'Comía' — acción habitual en el pasado o descripción. Ejemplo: 'De pequeña vivía en Marruecos (imperfecto), llegué a España en 2015 (indefinido), y este año he conseguido trabajo (perfecto)'."
+  },
+  {
+    "instruction": "كيف أعبر عن المستقبل في الإسبانية؟",
+    "response": "ثلاث طرق للمستقبل: 1) ir a + infinitivo — الأكثر استخداماً: 'Voy a estudiar mañana' — سأدرس غداً. 2) Presente con tiempo: 'Mañana estudio' — غداً سأدرس (غير رسمي). 3) Futuro simple: 'Estudiaré' — سأدرس (رسمي أكثر). النصيحة: في المحادثة اليومية استخدم دائماً 'voy a' — هو الأطبع والأكثر استخداماً."
+  },
+  {
+    "instruction": "Errores típicos de hablantes de árabe en español",
+    "response": "Los más comunes: 1) 'Hacer frío/calor' no 'ser/estar': 'Hace calor' ✅ no 'Está calor' ❌. 2) El artículo: 'Voy al médico' no 'Voy a médico'. 3) Ser vs estar: 'Estoy cansada' no 'Soy cansada'. 4) Género: 'el problema' no 'la problema'. 5) 'Llevar' tiempo: 'Llevo 5 años' no 'Tengo 5 años aquí'. ¿Cuál de estos cometes más tú?"
+  },
+  {
+    "instruction": "Vocabulario de tecnología en español",
+    "response": "Esencial para tu trabajo: 'el ordenador/el computador' — computer. 'la pantalla' — screen. 'el teclado' — keyboard. 'la contraseña' — password. 'la red' — network. 'el archivo' — file. 'la carpeta' — folder. 'la nube' — cloud. 'el servidor' — server. 'la aplicación/la app' — application. 'el código' — code. 'el error/el fallo' — bug. ¿Quieres vocabulario más específico de programación?"
+  },
+  {
+    "instruction": "Cómo hablo de mi trabajo de programadora en español",
+    "response": "Frases útiles: 'Me dedico al desarrollo de software' — I work in software development. 'Trabajo con Java y Python' — I work with... 'Estoy especializándome en Odoo' — I'm specializing in... 'Tengo experiencia en bases de datos' — I have experience in... 'Busco una posición de desarrolladora junior' — I'm looking for... En entrevistas: habla despacio, usa vocabulario técnico en inglés si no sabes en español — es totalmente aceptado."
+  },
+  {
+    "instruction": "Expresiones para mostrar acuerdo o desacuerdo",
+    "response": "Acuerdo: 'Tienes razón', 'Exacto', 'Totalmente de acuerdo', 'Eso es', 'Claro que sí'. Desacuerdo suave: 'No estoy segura', 'No lo veo así', 'Depende', 'Hombre, no sé...'. Desacuerdo directo: 'No estoy de acuerdo', 'Me parece que no es así'. Neutral: 'Puede ser', 'Quizás', 'No lo había pensado así'. En debates y reuniones estas frases son oro puro. 💪"
+  },
+  {
+    "instruction": "Corrige: cuando llegué a España no sabía nada de hablar español",
+    "response": "¡Muy buena frase! Pequeña mejora: 'Cuando llegué a España no sabía nada de español' — quitamos 'de hablar' porque es redundante. O más natural: 'Cuando llegué a España no hablaba nada de español'. La segunda versión usa imperfecto (hablaba) que es más correcto para describir un estado en el pasado. ¡Tu frase demuestra un nivel B1-B2 muy sólido!"
+  },
+  {
+    "instruction": "Frases hechas españolas más importantes",
+    "response": "Las más útiles: 'No hay mal que por bien no venga' — every cloud has a silver lining. 'A quien madruga, Dios le ayuda' — the early bird catches the worm. 'Más vale tarde que nunca' — better late than never. 'No hay dos sin tres' — bad things come in threes. Para el trabajo: 'El que la sigue la consigue' — perseverance pays off. Úsalas y sorprenderás a cualquier español nativo. 😄"
+  },
+  {
+    "instruction": "كيف أستعد لامتحان DELE C1؟",
+    "response": "امتحان DELE C1 له 4 أجزاء: 1) Comprensión de lectura — فهم النصوص. 2) Comprensión auditiva — فهم الاستماع. 3) Expresión escrita — الكتابة. 4) Expresión oral — التحدث. للتحضير: اقرأ صحف إسبانية يومياً (El País, El Mundo)، استمع للراديو الإسباني، تحدث مع SalimaBot يومياً! المستوى C1 يعني التعبير بطلاقة وتلقائية في أي موضوع. أنتِ قادرة! 💪"
+  },
+  {
+    "instruction": "Cómo pido ayuda sin parecer pesado en español",
+    "response": "Fórmulas perfectas: '¿Te importaría...?' — Would you mind...? '¿Podrías echarme una mano con...?' — Could you help me with...? '¿Tienes un momento?' — antes de pedir algo. 'Siento molestar pero...' — Sorry to bother you but... 'Cuando puedas, ¿me ayudas con...?' — Cuando tengas tiempo. En España pedir ayuda es normal y bien visto — no seas tímida. 😊"
+  },
+  {
+    "instruction": "Diferencia entre poco y un poco",
+    "response": "'Poco' solo = casi nada (negativo): 'Tengo poco tiempo' — apenas tengo tiempo. 'Un poco' = algo, algo de cantidad pequeña (positivo): 'Tengo un poco de tiempo' — tengo algo de tiempo. Error típico: 'Hablo poco español' — hablo muy mal español. 'Hablo un poco de español' — hablo algo de español. ¡La diferencia cambia completamente el significado!"
+  },
+  {
+    "instruction": "Vocabulario para describir tu personalidad en español",
+    "response": "Positivo: 'trabajadora' — hardworking, 'organizada' — organized, 'responsable' — responsible, 'proactiva' — proactive, 'creativa' — creative, 'perseverante' — persevering. Para entrevistas: 'Me considero una persona muy trabajadora y orientada a resultados'. Coloquial entre amigos: 'soy muy echada para adelante' — very outgoing, 'soy bastante tranquila' — calm person. ¿Cómo te describirías tú?"
+  },
+  {
+    "instruction": "Cómo escribo un mensaje de WhatsApp natural en español",
+    "response": "Muy usado: 'Oye' — hey/oye para empezar. 'Paso por ahí mañana, ¿te viene bien?' — I'll pass by tomorrow, works for you? 'Luego te llamo' — I'll call you later. 'Va, hasta luego' — Ok, bye. 'Perdona el retraso' — sorry for the delay. 'Te mando un audio' — very Spanish habit. Emojis más usados: 👍😂🙏. Evita ser demasiado formal en WhatsApp — suena raro. 😄"
+  }
+]

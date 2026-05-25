@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SalimaBot</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#080810;font-family:system-ui,sans-serif;display:flex;justify-content:center;align-items:center;min-height:100vh}
+.app{display:flex;width:820px;height:580px;border-radius:18px;overflow:hidden;border:0.5px solid #1e1e2e;box-shadow:0 20px 60px rgba(0,0,0,0.6)}
+.sidebar{background:#0a0a10;border-right:0.5px solid #1e1e2e;padding:20px;width:210px;display:flex;flex-direction:column;gap:6px}
+.logo{display:flex;align-items:center;gap:10px;margin-bottom:20px}
+.logo-circle{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#7F77DD,#3C3489);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;color:#EEEDFE;flex-shrink:0}
+.logo-text{color:#e0e0f0;font-size:14px;font-weight:600}
+.logo-sub{color:#4a4a6a;font-size:11px;margin-top:1px}
+.section-title{color:#3a3a5a;font-size:10px;text-transform:uppercase;letter-spacing:1px;margin:10px 0 6px}
+.nivel-btn{width:100%;text-align:left;padding:8px 10px;border-radius:8px;border:0.5px solid transparent;background:transparent;color:#5a5a8a;font-size:12px;cursor:pointer;display:flex;align-items:center;gap:8px;transition:all 0.2s}
+.nivel-btn:hover{background:#13131f;color:#9090c0}
+.nivel-btn.active{background:#1a1a2e;border-color:#534AB7;color:#AFA9EC}
+.nivel-dot{width:6px;height:6px;border-radius:50%;background:#2a2a4a;flex-shrink:0}
+.nivel-btn.active .nivel-dot{background:#7F77DD}
+.modo-btn{width:100%;text-align:left;padding:8px 10px;border-radius:8px;border:0.5px solid transparent;background:transparent;color:#5a5a8a;font-size:11px;cursor:pointer;transition:all 0.2s}
+.modo-btn:hover{background:#13131f;color:#9090c0}
+.modo-btn.active{background:#0d2020;color:#9FE1CB;border-color:#0F6E56}
+.progreso-box{background:#0d2020;border:0.5px solid #0F6E56;border-radius:8px;padding:10px;font-size:12px;color:#9FE1CB;line-height:1.8}
+.progreso-box b{color:#E1F5EE}
+.puntos-box{background:#1a1a2e;border:0.5px solid #534AB7;border-radius:8px;padding:10px;font-size:12px;color:#AFA9EC;line-height:1.8}
+.puntos-box b{color:#EEEDFE}
+.main{flex:1;display:flex;flex-direction:column;background:#0d0d14}
+.header{background:#0f0f1a;border-bottom:0.5px solid #1e1e2e;padding:14px 18px;display:flex;align-items:center;gap:10px}
+.h-avatar{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#7F77DD,#3C3489);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#EEEDFE;flex-shrink:0}
+.h-name{color:#e0e0f0;font-size:14px;font-weight:500}
+.h-status{color:#1D9E75;font-size:11px}
+.online{width:7px;height:7px;border-radius:50%;background:#1D9E75;margin-left:auto}
+.chat{flex:1;overflow-y:auto;padding:18px;display:flex;flex-direction:column;gap:14px}
+.chat::-webkit-scrollbar{width:4px}
+.chat::-webkit-scrollbar-track{background:transparent}
+.chat::-webkit-scrollbar-thumb{background:#2a2a4a;border-radius:4px}
+.msg{display:flex;gap:8px;align-items:flex-end}
+.msg.user{flex-direction:row-reverse}
+.m-avatar{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;flex-shrink:0;border:0.5px solid #2a2a4a}
+.msg.bot .m-avatar{background:#13131f;color:#7F77DD}
+.msg.user .m-avatar{background:#3C3489;color:#CECBF6;border-color:#534AB7}
+.bubble{padding:10px 14px;border-radius:16px;font-size:13px;line-height:1.6;max-width:73%;white-space:pre-wrap}
+.msg.bot .bubble{background:#13131f;color:#c0c0e0;border:0.5px solid #1e1e2e;border-bottom-left-radius:4px}
+.msg.user .bubble{background:#3C3489;color:#EEEDFE;border-bottom-right-radius:4px}
+.typing-bubble{background:#13131f;border:0.5px solid #1e1e2e;border-radius:16px;border-bottom-left-radius:4px;padding:12px 16px;display:flex;gap:4px;align-items:center}
+.dot{width:6px;height:6px;border-radius:50%;background:#534AB7;animation:bounce 1.2s infinite}
+.dot:nth-child(2){animation-delay:.2s}
+.dot:nth-child(3){animation-delay:.4s}
+@keyframes bounce{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-5px)}}
+.input-wrap{background:#0f0f1a;border-top:0.5px solid #1e1e2e;padding:14px 16px;display:flex;gap:10px;align-items:center}
+.input{flex:1;background:#13131f;border:0.5px solid #2a2a4a;border-radius:12px;padding:11px 15px;color:#e0e0f0;font-size:13px;outline:none;transition:border 0.2s}
+.input:focus{border-color:#534AB7}
+.input::placeholder{color:#3a3a5a}
+.send{width:38px;height:38px;border-radius:12px;background:#534AB7;border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;transition:background 0.2s}
+.send:hover{background:#7F77DD}
+.send svg{width:16px;height:16px;fill:none;stroke:#EEEDFE;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ejemplos{display:flex;gap:6px;padding:0 16px 10px;flex-wrap:wrap}
+.ej{background:#13131f;border:0.5px solid #2a2a4a;border-radius:20px;padding:5px 12px;font-size:11px;color:#7070a0;cursor:pointer;transition:all 0.2s}
+.ej:hover{border-color:#534AB7;color:#AFA9EC}
+.voz-btn{width:38px;height:38px;border-radius:12px;background:#13131f;border:0.5px solid #2a2a4a;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;transition:all 0.2s;font-size:16px}
+.voz-btn:hover{border-color:#534AB7}
+.voz-btn.activo{background:#534AB7;border-color:#7F77DD}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="sidebar">
+    <div class="logo">
+      <div class="logo-circle">S</div>
+      <div>
+        <div class="logo-text">SalimaBot</div>
+        <div class="logo-sub">Profesora IA</div>
+      </div>
+    </div>
+
+    <div class="section-title">Tu nivel</div>
+    <button class="nivel-btn" onclick="setNivel(this,'A1')"><div class="nivel-dot"></div>A1 Principiante</button>
+    <button class="nivel-btn" onclick="setNivel(this,'A2')"><div class="nivel-dot"></div>A2 Elemental</button>
+    <button class="nivel-btn active" onclick="setNivel(this,'B1')"><div class="nivel-dot"></div>B1 Intermedio</button>
+    <button class="nivel-btn" onclick="setNivel(this,'B2')"><div class="nivel-dot"></div>B2 Avanzado</button>
+    <button class="nivel-btn" onclick="setNivel(this,'C1')"><div class="nivel-dot"></div>C1 Experto</button>
+
+    <div class="section-title">Tu progreso</div>
+    <div class="progreso-box">
+      🔥 Racha: <b id="racha">-</b><br>
+      💬 Mensajes: <b id="mensajes">-</b><br>
+      📅 Hoy: <b id="hoy">-</b>
+    </div>
+
+    <div class="section-title">Puntos</div>
+    <div class="puntos-box">
+      ⭐ Total: <b id="pts-total">0</b><br>
+      ✅ OK: <b id="pts-ok">0</b> ❌ No: <b id="pts-no">0</b><br>
+      🔥 Racha: <b id="pts-racha">0</b>
+    </div>
+
+    <div class="section-title">Modo</div>
+    <button class="modo-btn active" onclick="setModo(this,'conversacion')">💬 Conversacion</button>
+    <button class="modo-btn" onclick="setModo(this,'vocabulario')">📚 Vocabulario</button>
+    <button class="modo-btn" onclick="setModo(this,'correccion')">✏️ Correccion</button>
+    <button class="modo-btn" onclick="setModo(this,'test')">🎯 Test nivel</button>
+    <button class="modo-btn" onclick="iniciarEjercicio()" style="color:#AFA9EC;border-color:#534AB7">🏆 Ejercicios +pts</button>
+    <button class="modo-btn" onclick="resetChat()" style="margin-top:4px;color:#5a3a3a">🗑️ Nueva sesion</button>
+  </div>
+
+  <div class="main">
+    <div class="header">
+      <div class="h-avatar">S</div>
+      <div>
+        <div class="h-name">SalimaBot</div>
+        <div class="h-status" id="status">activa ahora</div>
+      </div>
+      <div class="online"></div>
+    </div>
+
+    <div class="chat" id="chat">
+      <div class="msg bot">
+        <div class="m-avatar">S</div>
+        <div class="bubble">Hola! Soy SalimaBot tu profesora personal de espanol. Recuerdo nuestras conversaciones. Por donde empezamos hoy?</div>
+      </div>
+    </div>
+
+    <div class="ejemplos">
+      <span class="ej" onclick="usarEjemplo(this)">Practica entrevista</span>
+      <span class="ej" onclick="usarEjemplo(this)">Corrige mi texto</span>
+      <span class="ej" onclick="usarEjemplo(this)">Vocabulario trabajo</span>
+      <span class="ej" onclick="iniciarEjercicio()">🏆 Ejercicio rapido</span>
+    </div>
+
+    <div class="input-wrap">
+      <button class="voz-btn" id="vozBtn" onclick="toggleVoz()" title="Activar voz">🎤</button>
+      <input class="input" id="input" placeholder="Escribe en espanol o en عربي..." onkeydown="if(event.key==='Enter')enviar()">
+      <button class="send" onclick="enviar()">
+        <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+let nivel = 'B1';
+let modo = 'conversacion';
+let historial = [];
+let vozActiva = false;
+let ejercicioActual = null;
+let esperandoRespuesta = false;
+const MODELO = 'llama3.1:8b';
+
+async function cargarProgreso() {
+  try {
+    const r = await fetch('https://utter-earthly-spray.ngrok-free.dev/progreso');
+    const p = await r.json();
+    document.getElementById('racha').textContent = p.dias_racha + ' dias';
+    document.getElementById('mensajes').textContent = p.mensajes_total;
+    document.getElementById('hoy').textContent = new Date().toLocaleDateString('es-ES', {weekday:'short', day:'numeric', month:'short'});
+  } catch(e) {}
+}
+
+async function cargarPuntos() {
+  try {
+    const r = await fetch('https://utter-earthly-spray.ngrok-free.dev/puntos');
+    const p = await r.json();
+    document.getElementById('pts-total').textContent = p.total;
+    document.getElementById('pts-ok').textContent = p.correctas;
+    document.getElementById('pts-no').textContent = p.incorrectas;
+    document.getElementById('pts-racha').textContent = p.racha;
+  } catch(e) {}
+}
+
+cargarProgreso();
+cargarPuntos();
+
+function setNivel(btn, n) {
+  document.querySelectorAll('.nivel-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  nivel = n;
+}
+
+function setModo(btn, m) {
+  document.querySelectorAll('.modo-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  modo = m;
+}
+
+function usarEjemplo(el) {
+  document.getElementById('input').value = el.textContent;
+  enviar();
+}
+
+async function resetChat() {
+  if(!confirm('Borrar historial y empezar nueva sesion?')) return;
+  await fetch('https://utter-earthly-spray.ngrok-free.dev/reset', {method:'POST'});
+  historial = [];
+  document.getElementById('chat').innerHTML = '<div class="msg bot"><div class="m-avatar">S</div><div class="bubble">Nueva sesion iniciada. Por donde empezamos?</div></div>';
+}
+
+function addMsg(role, text) {
+  const chat = document.getElementById('chat');
+  const div = document.createElement('div');
+  div.className = 'msg ' + role;
+  const av = document.createElement('div');
+  av.className = 'm-avatar';
+  av.textContent = role === 'bot' ? 'S' : 'T';
+  const bub = document.createElement('div');
+  bub.className = 'bubble';
+  bub.textContent = text;
+  div.appendChild(av);
+  div.appendChild(bub);
+  chat.appendChild(div);
+  chat.scrollTop = chat.scrollHeight;
+}
+
+function addTyping() {
+  const chat = document.getElementById('chat');
+  const div = document.createElement('div');
+  div.className = 'msg bot';
+  div.id = 'typing';
+  div.innerHTML = '<div class="m-avatar">S</div><div class="typing-bubble"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>';
+  chat.appendChild(div);
+  chat.scrollTop = chat.scrollHeight;
+}
+
+function removeTyping() {
+  const t = document.getElementById('typing');
+  if(t) t.remove();
+}
+
+function toggleVoz() {
+  vozActiva = !vozActiva;
+  const btn = document.getElementById('vozBtn');
+  btn.classList.toggle('activo', vozActiva);
+  btn.textContent = vozActiva ? '🔊' : '🎤';
+}
+
+function hablarRespuesta(texto) {
+  if(!vozActiva) return;
+  const synth = window.speechSynthesis;
+  synth.cancel();
+  const utt = new SpeechSynthesisUtterance(texto);
+  utt.lang = 'es-ES';
+  utt.rate = 0.9;
+  const voces = synth.getVoices();
+  const vozEsp = voces.find(v => v.lang.startsWith('es'));
+  if(vozEsp) utt.voice = vozEsp;
+  synth.speak(utt);
+}
+
+async function iniciarEjercicio() {
+  try {
+    const r = await fetch('https://utter-earthly-spray.ngrok-free.dev/ejercicio');
+    const ej = await r.json();
+    ejercicioActual = ej;
+    esperandoRespuesta = true;
+    const chat = document.getElementById('chat');
+    const div = document.createElement('div');
+    div.className = 'msg bot';
+    div.innerHTML = `
+      <div class="m-avatar">S</div>
+      <div>
+        <div class="bubble" style="background:#1a1a2e;border-color:#534AB7">
+          🏆 <b>Ejercicio</b><br><br>
+          ${ej.pregunta}<br><br>
+          <small style="color:#7070a0">Escribe tu respuesta abajo y pulsa Enter</small>
+        </div>
+        <div style="background:#13131f;border:0.5px solid #2a2a4a;border-radius:8px;padding:8px 12px;margin-top:6px;font-size:11px;color:#7070a0">
+          ⭐ ${ej.puntos.total} pts | ✅ ${ej.puntos.correctas} | ❌ ${ej.puntos.incorrectas} | 🔥 Racha: ${ej.puntos.racha}
+        </div>
+      </div>`;
+    chat.appendChild(div);
+    chat.scrollTop = chat.scrollHeight;
+    document.getElementById('input').placeholder = 'Escribe tu respuesta aqui...';
+    document.getElementById('input').focus();
+  } catch(e) {
+    addMsg('bot', 'Error cargando ejercicio. Servidor activo?');
+  }
+}
+
+async function verificarRespuesta(msg) {
+  if(!ejercicioActual || !esperandoRespuesta) return false;
+  esperandoRespuesta = false;
+  ejercicioActual = null;
+  document.getElementById('input').placeholder = 'Escribe en espanol o en عربي...';
+
+  const r = await fetch('https://utter-earthly-spray.ngrok-free.dev/verificar', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+      respuesta: msg,
+      respuesta_correcta: ejercicioActual ? ejercicioActual.respuesta : '',
+      explicacion: ejercicioActual ? ejercicioActual.explicacion : ''
+    })
+  });
+  const data = await r.json();
+  const chat = document.getElementById('chat');
+  const div = document.createElement('div');
+  div.className = 'msg bot';
+
+  if(data.correcto) {
+    div.innerHTML = `<div class="m-avatar">S</div><div><div class="bubble" style="background:#0d2020;border-color:#0F6E56;color:#9FE1CB">✅ <b>Correcto! +10 puntos</b><br><br>${data.explicacion}<br><br><b style="color:#E1F5EE">Total: ${data.puntos.total} pts 🔥 Racha: ${data.puntos.racha}</b></div></div>`;
+  } else {
+    div.innerHTML = `<div class="m-avatar">S</div><div><div class="bubble" style="background:#1a0a0a;border-color:#6E1F1F;color:#E1CBCB">❌ <b>La respuesta correcta es: ${data.respuesta_correcta}</b><br><br>${data.explicacion}<br><br><small style="color:#a07070">Racha perdida. Sigue intentando! 💪</small></div></div>`;
+  }
+  chat.appendChild(div);
+  chat.scrollTop = chat.scrollHeight;
+  cargarPuntos();
+
+  setTimeout(() => {
+    const div2 = document.createElement('div');
+    div2.className = 'msg bot';
+    div2.innerHTML = `<div class="m-avatar">S</div><div class="bubble">Otro ejercicio? Pulsa "🏆 Ejercicios +pts" 😊</div>`;
+    chat.appendChild(div2);
+    chat.scrollTop = chat.scrollHeight;
+  }, 800);
+
+  return true;
+}
+
+async function enviar() {
+  const input = document.getElementById('input');
+  const msg = input.value.trim();
+  if(!msg) return;
+
+  addMsg('user', msg);
+  input.value = '';
+
+  if(esperandoRespuesta && ejercicioActual) {
+    const ejTemp = ejercicioActual;
+    ejercicioActual = null;
+    esperandoRespuesta = false;
+    document.getElementById('input').placeholder = 'Escribe en espanol o en عربي...';
+
+    const r = await fetch('https://utter-earthly-spray.ngrok-free.dev/verificar', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        respuesta: msg,
+        respuesta_correcta: ejTemp.respuesta,
+        explicacion: ejTemp.explicacion
+      })
+    });
+    const data = await r.json();
+    const chat = document.getElementById('chat');
+    const div = document.createElement('div');
+    div.className = 'msg bot';
+
+    if(data.correcto) {
+      div.innerHTML = `<div class="m-avatar">S</div><div><div class="bubble" style="background:#0d2020;border-color:#0F6E56;color:#9FE1CB">✅ <b>Correcto! +10 puntos</b><br><br>${data.explicacion}<br><br><b style="color:#E1F5EE">Total: ${data.puntos.total} pts 🔥 Racha: ${data.puntos.racha}</b></div></div>`;
+    } else {
+      div.innerHTML = `<div class="m-avatar">S</div><div><div class="bubble" style="background:#1a0a0a;border-color:#6E1F1F;color:#E1CBCB">❌ <b>La respuesta correcta es: ${data.respuesta_correcta}</b><br><br>${data.explicacion}<br><br><small style="color:#a07070">Sigue intentando! 💪</small></div></div>`;
+    }
+    chat.appendChild(div);
+    chat.scrollTop = chat.scrollHeight;
+    cargarPuntos();
+
+    setTimeout(() => {
+      const div2 = document.createElement('div');
+      div2.className = 'msg bot';
+      div2.innerHTML = `<div class="m-avatar">S</div><div class="bubble">Otro ejercicio? Pulsa "🏆 Ejercicios +pts" 😊</div>`;
+      chat.appendChild(div2);
+      chat.scrollTop = chat.scrollHeight;
+    }, 800);
+    return;
+  }
+
+  historial.push({role:'user', content: msg});
+  const prompt = `Eres SalimaBot, profesora de espanol amable, motivadora y experta. El estudiante esta en nivel ${nivel}. Modo: ${modo}. Si escribe en arabe respondes en arabe con ejemplos en espanol. Si escribe en espanol corriges errores amablemente explicando el porqué. Eres positiva, clara y propones ejercicios al final.`;
+  const mensajes = [{role:'system', content: prompt}, ...historial];
+
+  document.getElementById('status').textContent = 'escribiendo...';
+  addTyping();
+
+  try {
+    const r = await fetch('https://utter-earthly-spray.ngrok-free.dev/chat', {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({model: MODELO, messages: mensajes, stream: false})
+    });
+    const data = await r.json();
+    const resp = data.message.content;
+    removeTyping();
+    addMsg('bot', resp);
+    historial.push({role:'assistant', content: resp});
+    document.getElementById('status').textContent = 'activa ahora';
+    cargarProgreso();
+    hablarRespuesta(resp);
+  } catch(e) {
+    removeTyping();
+    addMsg('bot', 'Error de conexion. Asegurate de que Ollama y el servidor estan abiertos.');
+    document.getElementById('status').textContent = 'desconectada';
+  }
+}
+</script>
+</body>
+</html>
